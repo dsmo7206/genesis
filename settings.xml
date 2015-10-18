@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <Globals>
+    <Name>Genesis</Name>
+    <!--
+    <FullScreen>false</FullScreen>
+    <ResX>1200</ResX>
+    <ResY>800</ResY>
+    -->
+    <FullScreen>true</FullScreen>
+    <ResX>1920</ResX>
+    <ResY>1080</ResY>
+
+    <ClearColour>
+      <X>0</X>
+      <Y>0</Y>
+      <Z>0</Z>
+    </ClearColour>
+    <DesiredFPS>30</DesiredFPS>
+    <MaxPlanetPatchLevel>27</MaxPlanetPatchLevel>
+    <PlanetLevel1Distance>20.0</PlanetLevel1Distance>
+  </Globals>
+  <Scenes>
+    <Item>
+      <Name>New Sol</Name>
+      <Cameras>
+        <Item>
+          <Name>Main</Name>
+          <FovY>45.0</FovY>
+          <ZNear>0.001</ZNear>
+          <ZFar>50000.0</ZFar>
+          <CameraPosition>
+            <Value>
+              <X>0.0</X>
+              <Y>0.0</Y>
+              <Z>8000.0</Z>
+            </Value>
+            <ParentName>New Earth</ParentName>
+            <!--<Parent type="Origin"/>-->
+          </CameraPosition>
+          <CameraDirection>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>-1.0</Z>
+          </CameraDirection>
+          <CameraUp>
+            <X>0.0</X>
+            <Y>1.0</Y>
+            <Z>0.0</Z>
+          </CameraUp>
+          <LookSpeed>0.002</LookSpeed>
+          <MoveSpeed>100.0</MoveSpeed>
+        </Item>
+      </Cameras>
+      <Shapes>
+        
+        <Item type="Star">
+          <Name>New Sun</Name>
+          <Position type="Absolute">
+            <Value>
+              <X>0</X>
+              <Y>0</Y>
+              <Z>0</Z>
+            </Value>
+          </Position>
+          <Colour>
+            <X>1</X>
+            <Y>1</Y>
+            <Z>1</Z>
+          </Colour>
+        </Item>
+        
+        <Item type="Planet">
+          <Name>New Earth</Name>
+          <Radius>6760.0</Radius>
+
+          <PatchGenerator type="Libnoise">
+            <Seed>1</Seed>
+          </PatchGenerator>
+          <!--
+          <PatchGenerator type="RidgedMF">
+            <Seed>123</Seed>
+            <Lacunarity>2.1</Lacunarity>
+            <Gain>3.0</Gain>
+            <Offset>0.9</Offset>
+            <Octaves>15</Octaves>
+            <Scale>0.003</Scale>
+            <Bias>-0.05</Bias>
+          </PatchGenerator>
+          -->
+          <Atmosphere>
+            <PatchSize>80</PatchSize>
+            <WaveLength>
+              <X>0.65</X>
+              <Y>0.57</Y>
+              <Z>0.475</Z>
+            </WaveLength>
+            <Kr>0.003</Kr>
+            <Km>0.0015</Km>
+            <ESun>16.0</ESun>
+            <G>-0.75</G>
+            <ScaleDepth>0.25</ScaleDepth>
+            <Samples>3</Samples>
+          </Atmosphere>
+
+          <Position type="Rotation">
+            <AngularVelocity>0</AngularVelocity>
+            <Axis>
+              <X>0</X>
+              <Y>1</Y>
+              <Z>0</Z>
+            </Axis>
+            <Parent type="CircularOrbit">
+              <Radius>150000000</Radius>
+              <AngularVelocity>0.0001</AngularVelocity>
+              <ParentName>New Sun</ParentName>
+            </Parent>
+          </Position>
+          <!--
+          <Water type="Bruneton">
+            <Colour>
+              <X>0.039216</X>
+              <Y>0.156863</Y>
+              <Z>0.470588</Z>
+              <W>1</W>
+            </Colour>
+            <Stretch>100000</Stretch>
+            <Scale>0.01</Scale>
+          </Water>
+          -->
+          <!--
+          <Water type="Simple">
+            <Colour>
+              <X>0.039216</X>
+              <Y>0.156863</Y>
+              <Z>0.470588</Z>
+            </Colour>
+          </Water>
+          -->
+        </Item>
+        
+      </Shapes>
+    </Item>
+  </Scenes>
+</Settings>
+

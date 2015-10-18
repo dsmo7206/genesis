@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{58A589DF-7931-44C8-AEA5-E3979EC7D81E}</ProjectGuid>
+    <RootNamespace>Genesis</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Code\glm;C:\Code\AntTweakBar\include;$(IncludePath)</IncludePath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Code\glfw-3.0.3.bin.WIN32\include;C:\code\glew-1.10.0\include;C:\Code\glm;C:\Code\AntTweakBar\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>AntTweakBar.lib;glfw3.lib;opengl32.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Code\glfw-3.0.3.bin.WIN32\lib-msvc110;C:\Code\glew-1.10.0\lib\Release\Win32;C:\Code\AntTweakBar\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>D:\Code\glfw-3.0.4\include;D:\code\glew-1.10.0\include;D:\Code\glm;D:\Code\AntTweakBar\include;D:\Code\rapidxml</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>AntTweakBar64.lib;glfw3.lib;opengl32.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Code\glfw-3.0.4\lib-msvc120;D:\Code\glew-1.10.0\lib\Release\x64;D:\Code\AntTweakBar\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\Code\freeglut\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>AntTweakBar.lib;GLFW.lib;opengl32.lib;glew32.lib;glew32mx.lib;glew32mxs.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Code\assimp\lib_release_win32;C:\Code\freeglut\lib;C:\Code\AntTweakBar\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>D:\Code\glfw-3.0.4\include;D:\code\glew-1.10.0\include;D:\Code\glm;D:\Code\AntTweakBar\include;D:\Code\rapidxml</AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>AntTweakBar64.lib;glfw3.lib;opengl32.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Code\glfw-3.0.4\lib-msvc120;D:\Code\glew-1.10.0\lib\Release\x64;D:\Code\AntTweakBar\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <Profile>true</Profile>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="agent.cpp" />
+    <ClCompile Include="bruneton_atmosphere.cpp" />
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="compute_queue.cpp" />
+    <ClCompile Include="fullscreen_quad.cpp" />
+    <ClCompile Include="gbuffer.cpp" />
+    <ClCompile Include="globals.cpp" />
+    <ClCompile Include="glstuff.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="noise.cpp" />
+    <ClCompile Include="bruneton_water.cpp" />
+    <ClCompile Include="overlay.cpp" />
+    <ClCompile Include="patchhash.cpp" />
+    <ClCompile Include="planet_data_buffer.cpp" />
+    <ClCompile Include="planet_programs.cpp" />
+    <ClCompile Include="planet.cpp" />
+    <ClCompile Include="position.cpp" />
+    <ClCompile Include="scene.cpp" />
+    <ClCompile Include="scene_resolveable.cpp" />
+    <ClCompile Include="shader_program.cpp" />
+    <ClCompile Include="shapes.cpp" />
+    <ClCompile Include="simple_water.cpp" />
+    <ClCompile Include="skybox.cpp" />
+    <ClCompile Include="star.cpp" />
+    <ClCompile Include="terrain_generators.cpp" />
+    <ClCompile Include="uniform_block.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="world_clock.cpp" />
+    <ClCompile Include="xml.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="agent.h" />
+    <ClInclude Include="bruneton_atmosphere.h" />
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="compute_queue.h" />
+    <ClInclude Include="fullscreen_quad.h" />
+    <ClInclude Include="gbuffer.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="glstuff.h" />
+    <ClInclude Include="lightsource.h" />
+    <ClInclude Include="noise.h" />
+    <ClInclude Include="bruneton_water.h" />
+    <ClInclude Include="overlay.h" />
+    <ClInclude Include="patchhash.h" />
+    <ClInclude Include="planet_data_buffer.h" />
+    <ClInclude Include="planet_patch.h" />
+    <ClInclude Include="planet_programs.h" />
+    <ClInclude Include="planet.h" />
+    <ClInclude Include="position.h" />
+    <ClInclude Include="scene.h" />
+    <ClInclude Include="scene_resolveable.h" />
+    <ClInclude Include="shader_program.h" />
+    <ClInclude Include="shapes.h" />
+    <ClInclude Include="simple_water.h" />
+    <ClInclude Include="skybox.h" />
+    <ClInclude Include="star.h" />
+    <ClInclude Include="system.h" />
+    <ClInclude Include="terrain_generators.h" />
+    <ClInclude Include="uniform_block.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="world_clock.h" />
+    <ClInclude Include="xml.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bruneton_atmosphere\copyInscatter1.fs.glsl" />
+    <None Include="bruneton_atmosphere\copyInscatterN.fs.glsl" />
+    <None Include="bruneton_atmosphere\copyIrradiance.fs.glsl" />
+    <None Include="bruneton_atmosphere\earth.glsl" />
+    <None Include="bruneton_atmosphere\inscatter1.fs.glsl" />
+    <None Include="bruneton_atmosphere\inscatterN.fs.glsl" />
+    <None Include="bruneton_atmosphere\inscatterS.fs.glsl" />
+    <None Include="bruneton_atmosphere\irradiance1.fs.glsl" />
+    <None Include="bruneton_atmosphere\irradianceN.fs.glsl" />
+    <None Include="bruneton_atmosphere\transmittance.fs.glsl" />
+    <None Include="bruneton_fftx_fs.glsl" />
+    <None Include="bruneton_ffty_fs.glsl" />
+    <None Include="bruneton_fft_gs.glsl" />
+    <None Include="bruneton_fft_vs.glsl" />
+    <None Include="bruneton_init_fs.glsl" />
+    <None Include="bruneton_init_vs.glsl" />
+    <None Include="bruneton_inscatter.raw" />
+    <None Include="bruneton_irradiance.raw" />
+    <None Include="bruneton_noise.pgm" />
+    <None Include="bruneton_transmittance.raw" />
+    <None Include="fullscreen_quad_fs.glsl" />
+    <None Include="fullscreen_quad_vs.glsl" />
+    <None Include="lib_gpu_noise.glsl" />
+    <None Include="lib_gustavsson_perlin.glsl" />
+    <None Include="bruneton_render_fs.glsl" />
+    <None Include="bruneton_variances_fs.glsl" />
+    <None Include="bruneton_variances_vs.glsl" />
+    <None Include="bruneton_render_vs.glsl" />
+    <None Include="planet_overlay_macros.inl" />
+    <None Include="simplewater_fs.glsl" />
+    <None Include="simplewater_vs.glsl" />
+    <None Include="skybox_fs.glsl" />
+    <None Include="skybox_vs.glsl" />
+    <None Include="sky_fs.glsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="sky_vs.glsl" />
+    <None Include="terrain_cs.glsl" />
+    <None Include="lib_libnoise.glsl" />
+    <None Include="lib_ridgedmf.glsl" />
+    <None Include="terrain_fs.glsl" />
+    <None Include="terrain_vs.glsl" />
+    <None Include="lib_other_noise.glsl" />
+    <None Include="lib_webgl_noise.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="settings.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
